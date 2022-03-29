@@ -1,41 +1,38 @@
-
-body {
-    background-image: url("https://i.pinimg.com/originals/b8/4f/41/b84f4195a6d33c93d01111287c0c7b7e.jpg");
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 #title{
-    margin-top: 25;
-    padding: 0;
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 2rem;
+  text-align: center;
+  color: gray;
 }
 #description{
-    margin: 0 0 30px;
-    padding: 0;
-    color: #fff;
     text-align: center;
-    letter-spacing: 2px;
-    font-style: italic;
-    font-size: 1.4rem;
+    color: gray;    
 }
-#survey-form {
-    display: grid;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    padding: 40px;
-    background: rgba(f, f, f, f.8);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+#container{
+    
 }
-input{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px #888888;
 }
-
+.label-container__name{
+    color: gray;
+    font-size: 1.0rem;
+}
+.form-container span{
+    display: flex;
+}
+.input-text{
+    display: flex;
+    min-width: 500px;
+    height: 35px;
+    color: gray;
+    border-radius: 14px;
+}
 
