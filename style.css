@@ -1,38 +1,75 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#title{
+html{
+  font-family: 'Courier New', Courier, monospace;
+}
+body {
+    background: radial-gradient(100% 225% at 100% 0%, #FAFF00 0%, #000000 100%), linear-gradient(235deg, #DB00FF 0%, #000000 100%), linear-gradient(45deg, #241E92 0%, #241E92 40%, #5432D3 40%, #5432D3 50%, #7B6CF6 50%, #7B6CF6 70%, #E5A5FF 70%, #E5A5FF 100%), linear-gradient(180deg, #01024E 0%, #01024E 43%, #543864 43%, #543864 62%, #8B4367 62%, #8B4367 80%, #FF6464 80%, #FF6464 100%);
+    background-blend-mode: overlay, hard-light, overlay, normal;
+}
+#title {
   text-align: center;
-  color: gray;
+  color: white;
+  margin-top: 20px;
 }
-#description{
-    text-align: center;
-    color: gray;    
+#description {
+  text-align: center;
+  color: white;
 }
-#container{
+/*#container{
     
+}*/
+.form-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 10px #888888;
 }
-.form-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 5px 10px #888888;
+.label-container__name {
+  color: white;
+  font-size: 1.rem;
 }
-.label-container__name{
-    color: gray;
-    font-size: 1.0rem;
+.form-container span {
+  display: flex;
 }
-.form-container span{
-    display: flex;
+.input-text {
+  display: flex;
+  min-width: 500px;
+  height: 35px;
+  color: white;
+  border-radius: 10px;
 }
-.input-text{
-    display: flex;
-    min-width: 500px;
-    height: 35px;
-    color: gray;
-    border-radius: 14px;
+.input-text::placeholder{
+  padding: 3%;
 }
-
+.input-select{
+  display: flex;
+  min-width: 500px;
+  height: 35px;
+  border-radius: 10px;
+  padding: 3%;
+}
+.label-checkbox{
+  display: flex;
+  margin-top: 5px;
+}
+.input-message{
+  display: flex;
+  min-width: 500px;
+  height: 55px;
+  border-radius: 20px;
+  padding: 3%;
+}
+.input-submit{
+  min-width: 500px;
+  height: 55px;
+  border-radius: 15px;
+  background-color: white;
+  color: gray;
+  font-size: 1.0rem;
+}

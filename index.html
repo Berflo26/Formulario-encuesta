@@ -30,8 +30,8 @@
 
         <label class="label-container__name" for="" id="dropdown-label">
             <span>Which option best describes your current role?</span>
-            <input list="dropdown" placeholder="Select a option">
-                <datalist id="dropdown">
+            <input class="input-select" list="dropdown" placeholder="Select a option">
+                <datalist class="input-select__container" id="dropdown">
                     <option value="Student">Student</option>
                     <option value="Full time job">Full time job</option>
                     <option value="Full time leaner">Full time leaner</option>
@@ -39,24 +39,24 @@
                     <option value="Other">Other</option>
                 </datalist>
             </input >
-          </label>
+          </label><br>
 
-          <label class="label-container__name" for="radio" id="radio-label">
+          <label class="label-container__name" for="radio" id="radio-label"> <br>
             Would you recommend freeCodeCamp to a friend?
-            <span>Definitely</span>
-            <input type="radio" id="name-check" value="Definitely" name="radio" checked/>
+            <br><span class="span-radio">Definitely</span>
+            <input class="input-radio" type="radio" id="name-check" value="Definitely" name="radio" checked/>
 
             <span>Maybe</span>
             <input type="radio" id="name" value="Maybe" name="radio" />
 
             <span>Not sure</span>
             <input type="radio" id="name" value="Not sure" name="radio" />
-          </label>
+          </label><br>
 
           <label class="label-container__name" for="" id="check-label">
             What would you like to see improved? (Check all that apply)
             <span>Frontend Developer</span>
-            <input type="checkbox" id="input-check" />
+            <input class="label-checkbox" type="checkbox" id="input-check" />
 
             <span>Backend Developer</span>
             <input type="checkbox" id="" />
@@ -79,8 +79,10 @@
 
           <label class="label-container__name" for="message" id="message-label">
             <span>Any comments or suggestions?</span>
-           <input type="message">
-          </label>
+           <input class="input-message" type="message" placeholder="Enter your commetn here...">
+          </label><br>
+
+          <input class="input-submit" id="submit" type="submit" value="Submit">
       </form>
     </section>
   </body>
